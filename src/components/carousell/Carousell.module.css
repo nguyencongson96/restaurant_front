@@ -1,0 +1,45 @@
+.banner {
+  width: 60vw;
+  object-fit: cover;
+  border-radius: 5px;
+  background-position: 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pic {
+  object-position: center;
+  height: 80vh;
+  width: 0%;
+  border-radius: 10px;
+  object-fit: cover;
+  /* object-position: left top; */
+}
+
+.main_pic {
+  --time: 7000ms;
+  width: 100%;
+  min-width: 100%;
+  animation: change_pic var(--time) both infinite;
+}
+
+@keyframes change_pic {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .pic {
+    height: 50vh;
+  }
+}

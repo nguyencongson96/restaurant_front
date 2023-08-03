@@ -1,0 +1,11 @@
+.main {
+  font-family: "Playball", cursive;
+}
+
+/* RESERVATION */
+
+.reserve {
+  border: double;
+  margin: 2rem;
+  padding: 2rem;
+}

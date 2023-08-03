@@ -1,0 +1,33 @@
+.btn {
+  position: fixed;
+  right: 3vw;
+  height: 5.5vh;
+  padding: 1.5vh;
+  cursor: pointer;
+  fill: white;
+  background-color: var(--color);
+  border-radius: 40%;
+  animation: UpandDown ease-in-out 1.5s both infinite;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.btn:hover {
+  animation-play-state: paused;
+}
+
+@keyframes UpandDown {
+  0% {
+    top: 91vh;
+  }
+  50% {
+    top: 90vh;
+  }
+  100% {
+    top: 91vh;
+  }
+}
